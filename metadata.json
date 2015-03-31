@@ -1,0 +1,14 @@
+{
+  "name": "uv-dns",
+  "version": "0.1.0",
+  "author": "Kevin Hrpcek",
+  "summary": "Sets resolve.conf and makes sure /etc/hosts contains itelf",
+  "license": "Apache 2.0",
+  "source": "sxuvgit1",
+  "project_page": "Kevin",
+  "issues_url": "Kevin",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+

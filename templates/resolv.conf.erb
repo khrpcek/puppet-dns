@@ -1,0 +1,19 @@
+#managed by puppet
+#
+domain qg.com
+search qg.com mybpc.net vertisinc.net vertisapps.net
+
+<% if @site == 'sx' %>
+nameserver 10.255.0.1
+nameserver 10.255.128.1
+<% elsif @site == 'wa' %>
+nameserver 10.255.128.1
+nameserver 10.255.0.1
+<% elsif @site == '' %>
+nameserver 10.255.128.1
+nameserver 10.255.0.1
+<% else %>
+nameserver <%= scope['dns::site::local_dns']%>
+nameserver 10.255.128.1
+nameserver 10.255.0.1
+<% end %>
