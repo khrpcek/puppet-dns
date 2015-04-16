@@ -1,6 +1,6 @@
 {
   "name": "uv-dns",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Kevin Hrpcek",
   "summary": "Sets resolve.conf and makes sure /etc/hosts contains itelf",
   "license": "Apache 2.0",
