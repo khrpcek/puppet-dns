@@ -29,6 +29,8 @@ Facter.add("site") do
       site = "ny"
     elsif address.match(/10\.200\.10\.(?:2[2-5][0-9]?)/)
       site = "lax2"
+    elsif address.match(/10\.12\.(?:20[0-7]?)\./)
+      site = "ws"
     else
       site = "unknown"
     end
